@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ubuntu_management_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawer_surface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubuntu 管理"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="管理 APK 释放到 /data/local/ubuntu-22.04 的 Ubuntu rootfs。卸载 APK 不会自动删除这里的数据。"
+            android:textColor="#D2D8E3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ubuntu_management_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/drawer_card_background"
+            android:padding="14dp"
+            android:text="Checking status..."
+            android:textColor="@android:color/white"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/ubuntu_management_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/ubuntu_management_operation_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Idle"
+            android:textColor="#D9E3F4"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ubuntu_management_refresh_button"
+            style="@style/TermuxActivity.Drawer.PanelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="刷新状态" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ubuntu_management_repair_button"
+            style="@style/TermuxActivity.Drawer.PanelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="修复启动脚本" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ubuntu_management_reinstall_button"
+            style="@style/TermuxActivity.Drawer.PanelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="重装 Ubuntu" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ubuntu_management_delete_button"
+            style="@style/TermuxActivity.Drawer.PanelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="删除 Ubuntu 数据" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ubuntu_management_close_button"
+            style="@style/TermuxActivity.Drawer.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="返回终端" />
+
+        <TextView
+            android:id="@+id/ubuntu_management_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/drawer_muted_card_background"
+            android:minHeight="180dp"
+            android:padding="12dp"
+            android:text="Waiting for operation..."
+            android:textColor="#E8E8E8"
+            android:textIsSelectable="true"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

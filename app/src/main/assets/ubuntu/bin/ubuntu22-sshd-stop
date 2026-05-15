@@ -1,0 +1,6 @@
+#!/system/bin/sh
+. /data/local/ubuntu-22.04/.host/ubuntu-core.sh
+"$BUSYBOX" chroot "$ROOTFS" /usr/bin/env -i \
+  HOME=/root \
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+  /usr/bin/pkill sshd 2>/dev/null

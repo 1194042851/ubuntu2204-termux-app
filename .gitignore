@@ -1,0 +1,44 @@
+# From https://gist.github.com/iainconnor/8605514
+# with the addition of the /captures below.
+/captures
+
+# Built application files
+build/
+release/
+*.apk
+*.so
+.externalNativeBuild
+.cxx
+*.zip
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# The Ubuntu rootfs package is too large for normal Git pushes.
+# Keep it local or upload it separately through Git LFS / GitHub Releases.
+app/src/main/assets/ubuntu/rootfs-arm64.tgz
+app/src/main/assets/ubuntu/rootfs-arm64.sha256
+
+# Gradle generated files
+.gradle/
+
+# Signing files
+.signing/
+
+# Intellij
+.idea/
+*.iml
+
+# Vim
+*.swo
+*.swp
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.swp
+ehthumbs.db
+Thumbs.db

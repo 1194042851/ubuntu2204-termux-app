@@ -1,0 +1,10 @@
+#!/system/bin/sh
+. /data/local/ubuntu-22.04/.host/ubuntu-core.sh
+ensure_mounts
+mkdir -p "$ROOTFS/run/sshd"
+exec "$BUSYBOX" chroot "$ROOTFS" /usr/bin/env -i \
+  HOME=/root \
+  LANG=zh_CN.UTF-8 \
+  LC_ALL=zh_CN.UTF-8 \
+  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
+  /usr/sbin/sshd

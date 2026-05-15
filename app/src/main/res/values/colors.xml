@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drawer_surface">#161A22</color>
+    <color name="drawer_surface_alt">#202632</color>
+    <color name="drawer_panel_stroke">#2D3748</color>
+    <color name="drawer_card">#2A3140</color>
+    <color name="drawer_card_muted">#232936</color>
+    <color name="drawer_button">#3D475A</color>
+    <color name="drawer_button_pressed">#55627A</color>
+    <color name="drawer_button_active">#5B7CFA</color>
+    <color name="drawer_button_text">#F7FAFF</color>
+    <color name="drawer_button_text_muted">#D9E3F4</color>
+    <color name="drawer_divider">#384152</color>
+    <color name="drawer_path_bg">#11161F</color>
+    <color name="drawer_list_bg">#1A202A</color>
+</resources>

@@ -1,0 +1,3 @@
+#!/system/bin/sh
+. /data/local/ubuntu-22.04/.host/ubuntu-core.sh
+stop_mounts
